@@ -1,0 +1,28 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/628332d48d24c743c0615b72
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "nome": "TesteMedicamento",
+    "preco": "8.55",
+    "quantidade": "4",
+    "validade":"05/03/2025"
+}
+
+###
+PATCH http://localhost:5000/users/628332d48d24c743c0615b72
+Content-Type: application/json
+
+{
+    "nome": "TesteMedicamento2",
+    "preco": "3.85",
+    "quantidade": "8",
+    "validade":"05/03/2023"
+}
+
+###
+DELETE http://localhost:5000/users/628332d48d24c743c0615b72
