@@ -1,17 +1,21 @@
 import mongoose from "mongoose";
 
 const User = mongoose.Schema({
-    name:{
+    nome:{
         type: String,
         required: true
     },
-    email:{
+    preco:{
         type: String,
         required: true
     },
-    gender:{
-        type: String,
+    quantidade:{
+        type: int,
         required: true
+    },
+    validade:{ 
+        type: String, 
+        required: true 
     }
 });
 
