@@ -34,19 +34,16 @@ const MedList = () => {
       <body>
         <header>
           <h1 align="center">Estoque da Farmácia</h1>
-          <div id="menu">
-            <a href="http://localhost:3000/add">Cadastrar Medicamento</a>
-          </div>
         </header>
-              
-            <table className="table is-striped is-fullwidth hmt-5" id="table">
+        <Link to="/add" className="button is-primary mt-5">Cadastrar Medicamento</Link> 
+        <table className="table is-striped is-fullwidth">
                 <thead>
                     <tr>
-                    <th>No</th>
-                    <th>Nome</th>
-                    <th>Preço</th>
-                    <th>Qtd Cx</th>
-                    <th>Validade</th>
+                      <th>ID</th>
+                      <th>Nome</th>
+                      <th>Preço</th>
+                      <th>Quantidade</th>
+                      <th>Validade</th>
                     </tr>
                 </thead>
                 <tbody>

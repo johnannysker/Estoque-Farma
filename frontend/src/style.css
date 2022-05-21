@@ -3,20 +3,21 @@
     padding: 0;
 }
 header{
-    background-color: darkslategray;
+    background-color: rgb(22, 57, 231);
     height: 60px;
     padding: 20px;
-    color: mediumspringgreen;
+    color: rgb(165, 241, 244);
     
 }
 header h1 {
     font-size: 25px;
     font-family: Monaco;
+    font-weight: bold;
 }
 #menu{
     float: center;
     margin-top: 2px;
-    background-color: whitesmoke;
+    background-color: white;
 }
 #menu a {
     padding: 5px;
@@ -27,8 +28,9 @@ header h1 {
     font-family: "Helvetica Neue", "Helvetica";
 }
 #menu a:hover{
-    background-color: greenyellow;
-    color: blue;
+    background-color: white;
+    color: rgb(42, 32, 240);
+    font-weight: bold;
 }
 #table{
     margin-top: 50px;
