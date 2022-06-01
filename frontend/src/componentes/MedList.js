@@ -56,7 +56,7 @@ const MedList = () => {
                         <td>{user.validade}</td>
                         <td>
                         <Link to={`edit/${user._id}`}className="button is-info is-small">Editar</Link>
-                        <button onClick={() => deleteUser(user._id)} class="button is-danger is-small">Delete</button>
+                        <button onClick={() => deleteUser(user._id)} class="button is-danger is-small">Excluir</button>
                         </td>
                     </tr>
                     ))}

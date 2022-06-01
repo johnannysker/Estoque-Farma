@@ -37,7 +37,7 @@ const AddMed = () => {
           <h1 align="center">Cadastro de Medicamentos</h1>
         </header>
           <div>
-            <a href="http://localhost:3000" className="button is-primary mt-5">Estoque de medicamentos</a>
+            <a href="http://localhost:3000" className="button is-primary mt-5">Estoque de Medicamentos</a>
           </div>
         <div className="columns" id="reg">
           <div className="column is-half">
