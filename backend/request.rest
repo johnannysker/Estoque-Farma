@@ -2,6 +2,7 @@ GET http://localhost:5000/users
 
 ###
 GET http://localhost:5000/users/628332d48d24c743c0615b72
+
 ###
 POST http://localhost:5000/users
 Content-Type: application/json

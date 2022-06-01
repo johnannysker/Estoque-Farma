@@ -10,11 +10,12 @@ mongoose.connect('mongodb://localhost:27017/fullstack_db',{
     useUnifiedTopology: true
 });
 const db = mongoose.connection;
+const PORT = 5000;
 db.on('error', (error) => console.log(error));
-db.once('open', () => console.log('Banco de dados conectado...'));
+db.once('open', () => console.log('>> Banco de dados conectado!'));
 
 app.use(cors());
 app.use(express.json());
 app.use(UserRoute);
 
-app.listen(5000, () => console.log('O servidor está no ar...'));
+app.listen(PORT, () => console.log('>> O servidor está no ar na porta ' + PORT));

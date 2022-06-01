@@ -35,10 +35,10 @@ const AddMed = () => {
       <body>
         <header>
           <h1 align="center">Cadastro de Medicamentos</h1>
-          <div id="menu">
-            <a href="http://localhost:3000">Estoque de medicamentos</a>
-          </div>
         </header>
+          <div>
+            <a href="http://localhost:3000" className="button is-primary mt-5">Estoque de medicamentos</a>
+          </div>
         <div className="columns" id="reg">
           <div className="column is-half">
             <form onSubmit={saveMed}>
