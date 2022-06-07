@@ -1,0 +1,24 @@
+version: "3.6"
+services:
+  banco:
+    image: mongo
+    environment:
+      - AUTH=no
+  front:
+    image: app-mongo-frontend
+    depends_on:
+      - back
+    ports:
+      - "3000:3000"
+  back:
+    image: app-mongo-backend
+    depends_on:
+      - banco
+    environment:
+      - DATABASE_URL=mongodb://banco/mongo01
+      - SERVER_PORT=5000
+      - SALT_ROUNDS=7
+      - SECRET=M3uB@ckEnd!
+      - VALIDADE_TOKEN=300
+    ports:
+      - "5000:5000"

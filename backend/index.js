@@ -5,10 +5,11 @@ import UserRoute from "./routes/UserRoute.js";
 
 const app = express();
 
-mongoose.connect('mongodb://localhost:27017/fullstack_db',{
+mongoose.connect('mongodb://banco/fullstack_db', {                 
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
+
 const db = mongoose.connection;
 const PORT = 5000;
 db.on('error', (error) => console.log(error));

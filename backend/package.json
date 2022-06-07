@@ -1,11 +1,12 @@
 {
-  "name": "backend",
+  "name": "mongo",
   "version": "1.0.0",
   "description": "",
   "type": "module",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index",
+    "start-prod": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,6 +15,9 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.1",
-    "mongoose": "^6.3.3"
+    "mongoose": "^5.13.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
   }
 }
