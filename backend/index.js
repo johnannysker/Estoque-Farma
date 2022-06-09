@@ -29,13 +29,13 @@ const transporter = nodemailer.createTransport({
     host: "smtp.ethereal.email",
     port: 587,
     auth: {
-        user: "aurelio.considine3@ethereal.email",
-        pass: "VAGWPq4JqTZKV4jvwv"
+        user: "cesar.beier88@ethereal.email",
+        pass: "G6FbweyjqVdfhBxnGy"
     }
 });
 
 transporter.sendMail({
-    from: '"Estoque-Farma" <aurelio.considine3@ethereal.email>"',
+    from: '"Estoque-Farma" <noreply@ethereal.email>"',
     to: "joaoarruda@gmail.com",
     subject: "O Estoque-Farma te espera!",
     html: "Olá, seja bem-vindo ao Estoque-Farma! Vamos navegar nessa nova experiência? <a href='http://localhost:3000'>Clique aqui</a> par entrar."
